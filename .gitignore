@@ -1,3 +1,4 @@
 govdata_files/
 catalog_full.jsonld
 poetry.lock
+interesting_stats.db

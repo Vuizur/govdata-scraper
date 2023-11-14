@@ -1,10 +1,11 @@
 import json
 import os
+from typing import Any
 
 def fuse_all_jsonld_files(dir: str):
     """Fuses all jsonld files in the directory"""
     jsonld_files = [f for f in os.listdir(dir)]
-    final_file = []
+    final_file: list[Any] = []
     for jsonld_file in jsonld_files:
         with open(dir + "/" + jsonld_file, "r", encoding="utf-8") as f:
             # Load json LD data
